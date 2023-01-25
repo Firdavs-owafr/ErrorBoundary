@@ -4,7 +4,7 @@ export default class ErrorBoundary extends Component {
   state = {
     error: false
   }
-  componentDidCatch(){
+  componentDidCatch(error,errorInfo){
     this.setState({error: true})
   }
   render() {
